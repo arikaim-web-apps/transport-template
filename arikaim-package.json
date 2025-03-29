@@ -1,0 +1,67 @@
+{      
+    "title": "Transport services",
+    "version": "1.0.0",
+    "name": "transport",
+    "package-type": "template",
+    "icon": "truck",
+    "thumbnail": "thumbnail.jpg",
+    "private-repository": true,
+    "repository": "",
+    "require": {
+        "components": [
+            "icons",
+            "tailwind"
+        ],
+        "library": [
+            "jquery",
+            "arikaim",
+            "arikaim-ui"
+        ],
+        "extensions": [
+            "users"
+        ]
+    },
+    "routes": [
+        {
+            "path": "/",         
+            "home": true,  
+            "page": "home",
+            "language-path": true,
+            "name": "Home"                   
+        },
+        {
+            "path": "/privacy-policy",           
+            "page": "privacy",
+            "language-path": true,
+            "name": "Privacy"                   
+        }
+    ],
+    "languages": [
+        "en"      
+    ],
+    "themes": [
+        "default"
+    ],
+    "default-theme": "default",
+    "include": {     
+        "components": [             
+        ],      
+        "js": [
+            "form.js",
+            "theme.js",
+            "flyonui.js"
+        ],
+        "css": [
+            "preflight.css",
+            "style.css",
+            "tailwind.min.css"
+        ],        
+        "library": [
+            "jquery",                                
+            "arikaim",
+            "arikaim-ui"                     
+        ]       
+    },
+    "modules": {      
+    }
+}

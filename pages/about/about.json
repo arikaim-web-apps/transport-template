@@ -1,0 +1,27 @@
+{
+    "head": {
+        "favicon": "images/favicon.png",  
+        "title": "About"
+    },
+    "title": "About",
+    "labels": {
+        "created": "Created with",
+        "pages": "Pages",
+        "arikaim": "Arikaim CMS",
+        "tailwind": "Tailwind CSS",
+        "flyonui": "FlyonUI components library",
+        "requirements": "Requirements"
+    },
+    "pages": [
+        "About",
+        "Contact Us",
+        "Blog",
+        "Pricing",
+        "Terms and Conditions",
+        "Privacy Policy",
+        "User login",
+        "User signup",
+        "User dashboard",
+        "User profile"
+    ]
+}

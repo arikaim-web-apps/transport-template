@@ -1,0 +1,38 @@
+{
+    "title": "Transport Services",
+    "subtitle": "",
+    "columns": {
+        "company": {
+            "items": [                             
+                {
+                    "title": "Contact",
+                    "url": "#contact",
+                    "icon": "icons~mail"
+                },
+                {
+                    "title": "About",
+                    "url": "#about",
+                    "icon": "icons~info"
+                }
+            ]
+        },
+        "legal": {
+            "items": [
+                {
+                    "title": "Services",
+                    "url": "#services",
+                    "icon": "icons~lock"
+                },
+                {
+                    "title": "Privacy Policy",
+                    "url": "/privacy-policy",
+                    "icon": "icons~info"
+                }
+            ]
+        }
+    },
+    "labels": {
+        "created": "Created with Arikaim CMS"
+    },
+    "copyright": "Copyright {{ interval }}. All Rights Reserved."
+}

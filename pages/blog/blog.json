@@ -1,0 +1,9 @@
+{
+    "title": "Blog",    
+    "head": {
+        "favicon": "images/favicon.png",  
+        "title": "Blog",
+        "description": "Blog",
+        "keywords": "blog"
+    }    
+}

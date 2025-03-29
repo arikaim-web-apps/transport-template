@@ -1,0 +1,52 @@
+<nav 
+    class="flex flex-row items-center
+    {{ styles.size }} 
+    {{ styles.space }} 
+    {{ styles.color }}
+    {{ class }}">      
+    <div 
+        class="flex flex-row items-center 
+        {{ styles.content.size }}
+        {{ styles.content.align }}
+        {{ styles.content.space }}
+        {{ styles.content.color }}
+        {{ styles.content.border }}
+        {{ styles.content.class }}">
+        <div
+            class="w-full flex flex-col items-start">
+            <div 
+                class="self-center flex flex-row items-center">
+                <btn class="px-1 cursor-pointer sidebar-button py-2 md:hidden lg:hidden" type="button">                    
+                    {{ component(styles.sidebar.icon,styles.icon,'svg') }}               
+                </btn>   
+                <div class="px-2 xs:px-1 flex items-center flex-col xs:grow"> 
+                    <div class="bg-slate-50 rounded-full">              
+                        <img width="32px" height="32px" alt="{{ title }}" src="{{ template_url }}images/logo.svg">               
+                    </div>                                                 
+                    <div class="pl-2">                
+                        <div 
+                            class="dark:text-gray-200 poppins-font font-extrabold inline-block align-baseline text-2xl hover:text-sky-500 transition duration-700 ease-in-out">
+                            <a href="{{ url('') }}" class="align-baseline">
+                                {{ title }}
+                            </a>
+                        </div>                                 
+                        <div 
+                            class="text-center dark:text-gray-400 poppins-font tracking-wide text-stone-700 text-xs font-light -mt-2">
+                            {{ subtitle }}
+                        </div>
+                    </div> 
+                </div> 
+            </div>
+            <div 
+                class="my-4 self-center flex grow justify-center">
+                <div class="flex flex-row items-center lg:flex xs:hidden md:flex">
+                    {{  component('current>navbar.menu',{ 
+                            active: active, 
+                            styles: styles 
+                        }) 
+                    }}                  
+                </div> 
+            </div>      
+        </div>                
+    </div>       
+</nav>
