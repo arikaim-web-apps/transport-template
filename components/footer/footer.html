@@ -1,6 +1,8 @@
 <footer class="{{ styles.class }} {{ styles.space }}">    
-    <div class="{{ styles.size }} {{ styles.content }}">
-        <div>
+    <div        
+        class="{{ styles.size }} {{ styles.content }}">
+        <div
+            class="w-full">
             <div class="flex flex-row items-center">          
                 <div class="bg-stone-100 rounded-full p-0.5">              
                     <img width="32px" height="32px" alt="{{ title }}" src="{{ template_url }}images/logo.svg">               
@@ -17,14 +19,7 @@
                         {{ subtitle }}
                     </div>
                 </div>                                                      
-            </div>
-            <div 
-                class="px-1 pt-2 flex flex-row items-center">              
-                {{ component('icons~copyright',styles.icon,'svg') }}             
-                <div class="px-1 {{ styles.copyright.color }}">       
-                    {{ copyright|renderText({ interval: currentYear() }) }}             
-                </div> 
-            </div>                                                                  
+            </div>                                                                         
         </div> 
         {% for column in columns %}
         <div>
@@ -43,4 +38,11 @@
         {% endfor %} 
         {{ component('current>share.links',{}) }}
     </div>
+    <div 
+        class="{{ styles.size }} flex flex-row items-center">              
+        {{ component('icons~copyright',styles.icon,'svg') }}             
+        <div class="px-1 {{ styles.copyright.color }}">       
+            {{ copyright|renderText({ interval: currentYear() }) }}             
+        </div> 
+    </div>   
 </footer>
