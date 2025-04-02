@@ -1,10 +1,5 @@
-<div 
-    class="{{ class }} flex flex-col justify-center">
-    {% if hide_title != true %}
-    <h2 class="{{ styles.title }} {{ styles.align }}">
-        {{ title }}
-    </h2>
-    {% endif %}
+{% component 'current>page.section' %}
+    {% set id = 'services' %}    
     <div 
         class="w-full self-center grid grid-cols-3 lg:grid-cols-3 xs:grid-cols-1 sm:grid-cols-1 gap-10 lg:gap-10 xs:gap-8 sm:gap-8 md:gap-10">
         {% for item in items %}
@@ -15,4 +10,4 @@
             }}
         {% endfor %}
     </div>
-</div>
+{% endcomponent %}
