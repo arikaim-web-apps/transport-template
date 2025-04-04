@@ -1,7 +1,7 @@
 <div    
-    class="{{ theme.page.size }} {{ class }}">
+    id="{{ id }}"
+    class="pt-32 {{ theme.page.size }} {{ class }}">
     <div   
-        id="{{ id }}"
         class="{{ content_class }} flex flex-col justify-center {{ theme.page.content }}">
         {% if hide_title != true %}
         <h2 class="{{ styles.title }} {{ styles.align }}">
@@ -9,7 +9,7 @@
         </h2>
         {% endif %}
         <div 
-            class="{{ content_class }}">
+            class="w-3/4 md:w-3/4 lg:w-3/4 sm:w-full xs:w-full mx-auto {{ content_class }}">
             {{ content }}
         </div>
     </div>

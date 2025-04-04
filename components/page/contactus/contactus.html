@@ -1,12 +1,12 @@
 {% component 'current>page.section' %}
     {% set id = 'contact' %}    
     <div    
-        class="w-2/3 mx-auto sm:w-full lg:w-2/3 grid grid-cols-2 lg:grid-cols-2 sm:grid-cols-1">
+        class="w-full gap-4 grid grid-cols-2 lg:grid-cols-2 sm:grid-cols-1">
         <div class="{{ styles.class }}">
             {{ component('current>page.contactus.address',{}) }}      
         </div>
         <div 
-            class="{{ styles.class }} border-l border-stone-200 dark:border-stone-700" 
+            class="{{ styles.class }} border-l border-stone-200 dark:border-indigo-900" 
             id="contactus_content">
             {{ component('current>page.contactus.form',{ styles: styles }) }}
         </div>

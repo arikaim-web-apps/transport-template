@@ -1,8 +1,8 @@
 {% component 'current>layout' type 'html' %}   
     {% set active = 'home' %}   
     <div   
-        class="dark:text-gray-200 opacity-animation transition-opacity ease-in duration-700 opacity-0 mt-44 w-2/3 gap-4 mx-auto sm:w-full lg:w-2/3 grid grid-cols-1 lg:grid-cols-1 sm:grid-cols-1">       
-        <div class="place-content-center">
+        class="mt-72 dark:text-gray-200 opacity-animation transition-opacity ease-in duration-700 opacity-0 w-2/3 gap-4 mx-auto sm:w-full lg:w-2/3 grid grid-cols-1 lg:grid-cols-1 sm:grid-cols-1">       
+        <div class="place-content-center px-10">
             <h1 class="poppins-font font-bold text-center  text-5xl">
                 {{ title }}
             </h1>        
@@ -19,17 +19,17 @@
         </div>
     </div>
     {{  component('current>features',{
-            class: 'py-32 dark:bg-blue-950',
+            class: 'py-12 dark:bg-blue-950',
         }) 
     }}
 
     {{  component('current>page.contactus',{
-            class: 'py-32 dark:bg-indigo-950'
+            class: 'py-12 dark:bg-indigo-950'
         }) 
     }}
 
     {{  component('current>page.about',{
-            class: 'py-32 dark:bg-gray-800' 
+            class: 'py-12 dark:bg-gray-900' 
         }) 
     }}
 {% endcomponent %}

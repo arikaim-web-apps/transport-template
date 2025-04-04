@@ -2,7 +2,7 @@
     <div        
         class="{{ styles.size }} {{ styles.content }}">
         <div
-            class="w-full">
+            class="w-full place-content-center flex">
             <div class="flex flex-row items-center">          
                 <div class="bg-stone-100 rounded-full p-0.5">              
                     <img width="32px" height="32px" alt="{{ title }}" src="{{ template_url }}images/logo.svg">               
@@ -22,7 +22,7 @@
             </div>                                                                         
         </div> 
         {% for column in columns %}
-        <div>
+        <div class="w-full place-content-center flex flex-col">
             <h2 class="{{ styles.item.title }}">
                 {{ column.title }}
             </h2> 
@@ -39,7 +39,7 @@
         {{ component('current>share.links',{}) }}
     </div>
     <div 
-        class="{{ styles.size }} flex flex-row items-center">              
+        class="border-t border-dotted dark:border-stone-800 py-4 {{ styles.size }} place-content-center flex flex-row items-center">              
         {{ component('icons~copyright',styles.icon,'svg') }}             
         <div class="px-1 {{ styles.copyright.color }}">       
             {{ copyright|renderText({ interval: currentYear() }) }}             

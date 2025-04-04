@@ -4,13 +4,13 @@
     "item": {
         "text": "p-8 my-2 flex-grow dark:text-gray-200",
         "subtitle": "dark:text-gray-400 text-center text-stone-700 pt-1",
-        "circle": "p-4 dark:bg-gray-800 flex self-center rounded-full h-20 w-20 text-center bg-stone-50",
-        "title": "dark:text-gray-200 font-normal text-lg text-center poppins-font p-2 px-8",
+        "circle": "p-4 dark:bg-indigo-950 flex self-center rounded-full h-24 w-24 text-center bg-stone-50",
+        "title": "uppercase dark:text-gray-200 font-semibold text-xl text-center poppins-font p-2 px-8",
         "class": "dark:bg-transparent p-4 h-full w-full justify-self-stretch rounded-sm shadow-xs",
         "item": "flex flex-row items-center",
         "animation": "opacity-animation transition-opacity ease-in duration-1000 opacity-0",
         "icon": {
-            "color": "text-lime-500 dark:text-gray-200", 
+            "color": "text-red-700 dark:text-red-700", 
             "size": "h-full w-full", 
             "width": 1
         },
