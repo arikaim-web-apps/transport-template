@@ -6,5 +6,8 @@
         "keywords": "services, transport"
     },
     "title": "Cargo Transport Services",
-    "subtitle": ""
+    "buttons": {
+        "quote": "Get Quote"
+    },
+    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus."
 }

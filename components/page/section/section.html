@@ -1,12 +1,16 @@
-<div 
-    id="{{ id }}"
-    class="{{ class }} flex flex-col justify-center">
-    {% if hide_title != true %}
-    <h2 class="{{ styles.title }} {{ styles.align }}">
-        {{ title }}
-    </h2>
-    {% endif %}
-    <div class="{{ content_class }}">
-        {{ content }}
+<div    
+    class="{{ theme.page.size }} {{ class }}">
+    <div   
+        id="{{ id }}"
+        class="{{ content_class }} flex flex-col justify-center {{ theme.page.content }}">
+        {% if hide_title != true %}
+        <h2 class="{{ styles.title }} {{ styles.align }}">
+            {{ title }}
+        </h2>
+        {% endif %}
+        <div 
+            class="{{ content_class }}">
+            {{ content }}
+        </div>
     </div>
 </div>

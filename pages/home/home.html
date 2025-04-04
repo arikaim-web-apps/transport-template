@@ -10,22 +10,26 @@
                 {{ subtitle }}
             </h2>
         </div>
-      
+        <div class="my-32 flex place-content-center">
+            <button 
+                role="button"
+                class="btn btn-wide btn-lg btn-accent btn-gradient poppins-font font-bold">
+                {{ buttons.quote }}
+            </button>
+        </div>
     </div>
-   
-
     {{  component('current>features',{
-            class: 'my-32' 
+            class: 'py-32 dark:bg-blue-950',
         }) 
     }}
 
     {{  component('current>page.contactus',{
-            class: 'my-64' 
+            class: 'py-32 dark:bg-indigo-950'
         }) 
     }}
 
     {{  component('current>page.about',{
-            class: 'my-64' 
+            class: 'py-32 dark:bg-gray-800' 
         }) 
     }}
 {% endcomponent %}
