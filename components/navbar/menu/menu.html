@@ -8,7 +8,10 @@
                 {{ component(item.icon,styles.icon,'svg') }}  
             </div>                           
         {% endif %}
-        {{ item.title }}
+        <span class="{{ styles.item.link }}">
+            {{ item.title }}
+        </span>
+       
     </a>
 </div>             
 {% endfor %}

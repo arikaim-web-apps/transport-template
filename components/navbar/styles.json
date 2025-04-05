@@ -20,8 +20,8 @@
     },
     "icon": {
         "name": "icons~user",
-        "size": "h-6 w-6",
-        "class": "cursor-pointer transition duration-1000 ease-in-out",
+        "size": "h-full w-full",
+        "class": "p-1 cursor-pointer transition duration-1000 ease-in-out",
         "color": "text-sky-500"
     },
     "tools": {
@@ -32,8 +32,9 @@
         }
     },
     "item": {
-        "class": "poppins-font text-sm open-sans font-normal px-4 md:p-1 lg:px-4",
-        "color": "dark:text-gray-200 dark:hover:text-red-500 hover:text-red-700 transition duration-700 ease-in-out",
+        "class": "poppins-font text-md open-sans font-normal px-4 py-1",
+        "color": "dark:text-gray-200 ",
+        "link": "decoration-red-600 underline-offset-2 dark:hover:underline hover:underline transition duration-700 ease-in-out",
         "active": "text-red-800"
     }
 }

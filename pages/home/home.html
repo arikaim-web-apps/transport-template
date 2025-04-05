@@ -1,35 +1,41 @@
 {% component 'current>layout' type 'html' %}   
     {% set active = 'home' %}   
     <div   
-        class="mt-72 dark:text-gray-200 opacity-animation transition-opacity ease-in duration-700 opacity-0 w-2/3 gap-4 mx-auto sm:w-full lg:w-2/3 grid grid-cols-1 lg:grid-cols-1 sm:grid-cols-1">       
+        class="mt-72 dark:text-gray-200 w-2/3 gap-4 mx-auto sm:w-full lg:w-2/3 grid grid-cols-1 lg:grid-cols-1 sm:grid-cols-1">       
         <div class="place-content-center px-10">
-            <h1 class="poppins-font font-bold text-center  text-5xl">
+            <h1 class="dark:text-gray-200 poppins-font font-bold text-center text-6xl">
                 {{ title }}
             </h1>        
             <h2 class="dark:text-gray-400 block text-center poppins-font mt-2 text-xl text-stone-700 font-light">
                 {{ subtitle }}
             </h2>
         </div>
-        <div class="my-32 flex place-content-center">
+        <div class="my-64 flex place-content-center">
             <button 
                 role="button"
-                class="btn btn-wide btn-lg btn-accent btn-gradient poppins-font font-bold">
+                class="btn btn-wide btn-lg btn-success btn-gradient poppins-font font-bold">
                 {{ buttons.quote }}
             </button>
         </div>
     </div>
-    {{  component('current>features',{
-            class: 'py-12 dark:bg-blue-950',
+    {{  component('current>page.services',{
+            class: 'py-12 dark:bg-gradient-to-b dark:from-blue-950 dark:to-indigo-900',
         }) 
     }}
 
-    {{  component('current>page.contactus',{
-            class: 'py-12 dark:bg-indigo-950'
+    {{  component('current>page.testimonials',{
+            class: 'py-12 dark:bg-gradient-to-b dark:from-indigo-900 dark:to-blue-950' 
         }) 
     }}
 
     {{  component('current>page.about',{
-            class: 'py-12 dark:bg-gray-900' 
+            class: 'py-12 dark:bg-gradient-to-b dark:from-gray-900 dark:to-gray-800' 
         }) 
     }}
+
+    {{  component('current>page.contactus',{
+            class: 'py-12 dark:bg-gradient-to-b dark:from-indigo-900 dark:to-gray-900'
+        }) 
+    }}
+
 {% endcomponent %}

@@ -8,7 +8,6 @@
         "title": "uppercase dark:text-gray-200 font-semibold text-xl text-center poppins-font p-2 px-8",
         "class": "dark:bg-transparent p-4 h-full w-full justify-self-stretch rounded-sm shadow-xs",
         "item": "flex flex-row items-center",
-        "animation": "opacity-animation transition-opacity ease-in duration-1000 opacity-0",
         "icon": {
             "color": "text-red-700 dark:text-red-700", 
             "size": "h-full w-full", 

@@ -16,6 +16,11 @@
             "url": "#services"                
         },
         {
+            "title": "Testimonials",
+            "key": "testimonials",
+            "url": "#testimonials"                
+        },
+        {
             "title": "Contact",
             "key": "contact-us",
             "url": "#contact"                

@@ -1,5 +1,5 @@
 <nav 
-    class="flex flex-row items-center z-10 fixed
+    class="flex flex-row items-center fixed z-10
     {{ styles.size }} 
     {{ styles.space }} 
     {{ styles.color }}
@@ -16,10 +16,30 @@
             class="w-full flex flex-col items-start">
             <div 
                 class="self-center flex flex-row items-center">
-                <btn class="px-1 cursor-pointer sidebar-button py-2 md:hidden lg:hidden" type="button">                    
-                    {{ component(styles.sidebar.icon,styles.icon,'svg') }}               
-                </btn>   
-                <div class="px-2 xs:px-1 flex items-center flex-col xs:grow"> 
+                <div class="dark:bg-dark-light dropdown inline-flex rtl:[--placement:bottom-end]">
+                    <button 
+                        id="dropdown-menu-icon" 
+                        type="button" 
+                        class="flex place-content-center md:block lg:hidden dark:bg-dark-light dropdown-toggle btn btn-square btn-outline" 
+                        aria-haspopup="menu" 
+                        aria-expanded="false" 
+                        aria-label="Menu">                    
+                        {{ component(styles.sidebar.icon,styles.icon,'svg') }}                           
+                    </button>
+                    <ul 
+                        class="z-50 mt-8 dark:bg-gray-800 dark:text-gray-200 dropdown-menu dropdown-open:opacity-100 hidden min-w-60" 
+                        role="menu" 
+                        aria-orientation="vertical" 
+                        aria-labelledby="dropdown-menu-icon">
+                        {{  component('current>navbar.menu',{ 
+                                active: active, 
+                                styles: styles,
+                                class: 'dropdown-item z-50' 
+                            }) 
+                        }}                                               
+                    </ul>
+                </div>
+                <div class="ml-2 px-2 xs:px-1 flex items-center flex-col xs:grow"> 
                     <div class="bg-slate-50 rounded-full">              
                         <img width="32px" height="32px" alt="{{ title }}" src="{{ template_url }}images/logo.svg">               
                     </div>                                                 
@@ -38,8 +58,8 @@
                 </div> 
             </div>
             <div 
-                class="my-4 self-center flex grow justify-center">
-                <div class="flex flex-row items-center lg:flex xs:hidden md:flex">
+                class="xs:hidden md:flex my-4 self-center flex grow justify-center">
+                <div class="flex flex-row items-center lg:flex ">
                     {{  component('current>navbar.menu',{ 
                             active: active, 
                             styles: styles 
