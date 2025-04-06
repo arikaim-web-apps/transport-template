@@ -19,7 +19,7 @@ In theme folder:
     npm install @tailwindcss/typography
 
 3. Install Flyonui
-    npm install flyonui
+    npm install flyonui 1.3
     
 4. Start watch process
     npx tailwindcss -i css/include.css -o css/tailwind.min.css -m --watch

@@ -1,6 +1,33 @@
 {% component 'current>page.section' %}
     {% set id = 'testimonials' %}  
     <div>
-        
+        {% for item in items %}
+        <div            
+            class="mt-8 flex fexl-row items-stretch flex-wrap">
+            <div              
+                class="basis-1/4 h-full rounded place-content-center p-4 dark:bg-indigo-950">                           
+                <div                 
+                    class="h-24 w-24  mx-auto flex place-content-center rounded-full dark:bg-indigo-900">
+                    {{ component('icons~user.circle',{ color: 'dark:text-gray-800',class: 'p-2 w-full h-full', width: 1 },'svg') }}            
+                </div>              
+                <div                    
+                    class="p-4 flex flex-col ">
+                    <div 
+                        class="text-right">
+                        {{ item.name }}
+                    </div>
+                    <div class="uppercase text-xs font-bold text-right">
+                        {{ item.company }}
+                    </div>
+                </div>                
+            </div>
+            <div              
+                class="basis-1/2 ml-8 xs:ml-2 sm:ml-2 md:ml-8 p-12  flex-grow rounded dark:bg-blue-950">
+                <p>
+                    "{{ item.message }}"
+                </p>
+            </div>
+        </div>
+        {% endfor %}
     </div>
 {% endcomponent %}

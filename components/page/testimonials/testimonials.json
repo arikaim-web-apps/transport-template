@@ -1,3 +1,20 @@
 {
-    "title": "Testimonials"
+    "title": "Testimonials",
+    "items": [
+        {
+            "name": "John Smith",
+            "company": "ML Corp",
+            "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit"
+        },
+        {
+            "name": "James M",
+            "company": "Cargo Corp",
+            "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit"
+        },
+        {
+            "name": "William J",
+            "company": "Cargo Corp",
+            "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit"
+        }
+    ]
 }
