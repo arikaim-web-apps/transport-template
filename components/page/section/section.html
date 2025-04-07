@@ -1,7 +1,7 @@
 <div    
-    id="{{ id }}"
-    class="py-28 {{ theme.page.size }} {{ class }}">
-    <div   
+    id="{{ id }}"    
+    class="py-32 {{ theme.page.size }} {{ class }}">
+    <div         
         class="{{ content_class }} flex flex-col justify-center {{ theme.page.content }}">
         {% if hide_title != true %}
         <h2 class="{{ styles.title }} {{ styles.align }}">
@@ -9,7 +9,7 @@
         </h2>
         {% endif %}
         <div 
-            class="opacity-100 {{ styles.animation }} dark:text-gray-200 w-3/4 md:w-3/4 lg:w-3/4 sm:w-full xs:w-full mx-auto {{ content_class }}">
+            class="px-4 opacity-100 {{ styles.animation }} dark:text-gray-200 w-3/4 md:w-3/4 lg:w-3/4 sm:w-full xs:w-full mx-auto {{ content_class }}">
             {{ content }}
         </div>
     </div>

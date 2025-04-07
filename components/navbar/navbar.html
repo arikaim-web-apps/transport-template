@@ -13,14 +13,14 @@
         {{ styles.content.border }}
         {{ styles.content.class }}">
         <div
-            class="w-full flex flex-col items-start">
+            class="w-full flex flex-col items-start">           
             <div 
                 class="self-center flex flex-row items-center">
                 <div class="dark:bg-dark-light dropdown inline-flex rtl:[--placement:bottom-end]">
                     <button 
                         id="dropdown-menu-icon" 
                         type="button" 
-                        class="flex place-content-center md:block lg:hidden dark:bg-dark-light dropdown-toggle btn btn-square btn-outline" 
+                        class="flex place-content-center sm:block xs:block md:hidden lg:hidden dark:bg-dark-light dropdown-toggle btn btn-square btn-outline" 
                         aria-haspopup="menu" 
                         aria-expanded="false" 
                         aria-label="Menu">                    
@@ -39,9 +39,9 @@
                         }}                                               
                     </ul>
                 </div>
-                <div class="ml-2 px-2 xs:px-1 flex items-center flex-col xs:grow"> 
-                    <div class="bg-slate-50 rounded-full">              
-                        <img width="32px" height="32px" alt="{{ title }}" src="{{ template_url }}images/logo.svg">               
+                <div class="ml-2 px-2 xs:px-1 flex items-center flex-row xs:grow"> 
+                    <div class="bg-transparent rounded-full">              
+                        <img width="64px" height="64px" alt="{{ title }}" src="{{ template_url }}images/logo.svg">               
                     </div>                                                 
                     <div class="pl-2">                
                         <div 
@@ -58,7 +58,7 @@
                 </div> 
             </div>
             <div 
-                class="xs:hidden md:flex my-4 self-center flex grow justify-center">
+                class="xs:hidden sm:hidden md:flex my-2 self-center flex grow justify-center">
                 <div class="flex flex-row items-center lg:flex ">
                     {{  component('current>navbar.menu',{ 
                             active: active, 

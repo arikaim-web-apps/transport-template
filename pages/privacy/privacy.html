@@ -3,8 +3,8 @@
     {{ component('current>page.title',{ title: title, subtitle: description }) }}  
     {{  component('current>page.privacy',{ 
             company: 'Company Ltd', 
-            contactus: url('/contact-us'),
-            contactus_class: 'text-sm underline ' ~ theme.link,
+            contactus: url('/#contact'),
+            contactus_class: theme.link,
             website: url('',true) 
         }) 
     }}                                                      

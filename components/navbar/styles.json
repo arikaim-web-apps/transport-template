@@ -6,7 +6,7 @@
         "class": "",
         "size": "w-3/4 lg:w-3/4 sm:w-full xs:w-full",
         "align": "mx-auto",
-        "space": "p-4",
+        "space": "p-2",
         "color": "bg-stone-100 dark:bg-gray-800",
         "border": ""
     },

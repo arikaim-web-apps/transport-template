@@ -13,7 +13,7 @@
         },
         "select": ""
     },
-    "link": "text-sky-800 font-semibold hover:underline hover:text-red-700 transition duration-700 ease-in-out",
+    "link": "decoration-red-600 underline-offset-2 dark:hover:underline hover:underline transition duration-700 ease-in-out",
     "page": {
         "size": "w-full",
         "color" : "",

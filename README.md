@@ -24,7 +24,3 @@ In theme folder:
 4. Start watch process
     npx tailwindcss -i css/include.css -o css/tailwind.min.css -m --watch
  
-
-
-
- 
