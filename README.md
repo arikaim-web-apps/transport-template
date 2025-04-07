@@ -10,17 +10,22 @@
 
 #### Customization 
 
-In theme folder: 
+1. Copy files in folder ../arikaim/view/templates/transport
 
-1. Install Tailwind CSS 3.4
-    npm install tailwindcss @tailwindcss/cli
+In template folder: 
 
-2. Install typography
-    npm install @tailwindcss/typography
+2. Install Tailwind run 
 
-3. Install Flyonui
-    npm install flyonui 1.3
-    
-4. Start watch process
-    npx tailwindcss -i css/include.css -o css/tailwind.min.css -m --watch
- 
+```sh
+
+npm install
+
+```
+
+3. Start watch process
+
+```sh
+
+npx @tailwindcss/cli -i css/include.css -o css/tailwind.min.css -m --watch
+
+```

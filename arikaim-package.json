@@ -51,8 +51,7 @@
             "theme.js",
             "flyonui.js"
         ],
-        "css": [
-            "preflight.css",
+        "css": [         
             "style.css",
             "tailwind.min.css"
         ],        
