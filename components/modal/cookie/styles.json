@@ -8,7 +8,7 @@
     "details": "py-2",
     "close": "cursor-pointer hover:text-red-500",
     "button": "btn btn-success poppins-font",
-    "content": "py-4 text-md",
+    "content": "py-4 text-md text-stone-900",
     "icon": {
         "name": "icons~close",
         "size": "h-4 w-4",
