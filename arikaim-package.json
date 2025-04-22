@@ -5,8 +5,7 @@
     "package-type": "template",
     "icon": "truck",
     "thumbnail": "thumbnail.jpg",
-    "private-repository": true,
-    "repository": "",
+    "repository": "https://github.com/arikaim-web-apps/transport-template.git",
     "require": {
         "components": [
             "icons",
